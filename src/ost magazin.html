@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OST Magazin</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 <body class="bg-black">
-    <!-- section1 -->
-     <nav class=" p-2 bg-[#333333] ">
+    <!-- section1 -->     
+     <nav class=" p-2 bg-[#333333] lg:text-lg ">
         <div class="flex  w-[90%] ml-[5%] justify-between text-[#828080]">
             <ul class="flex gap-3 text-[#828080]  ">
                 <li class="border-r-2 pr-2 border-[#828080]">Libero</li>
@@ -18,13 +20,12 @@
                 <li>Suspendisse</li>
             </ul>
 
-            <div class=" flex gap-2">
+            <div class=" flex lg:gap-2 ">
                 <input class="border bg-[#333333] pl-1" type="text" placeholder="Search Our Website...">
                 <button class="border text-white py-0 px-4 font-bold">SEARCH</button>
             </div>
         </div>
      </nav>
-
    <!-- section2 -->
     <header class="flex   justify-between w-[90%] ml-[5%] bg-black py-4">
         <div class=" text-right ">
@@ -40,6 +41,83 @@
             <li class="5 hover:text-yellow-400 hover:border-t-4 hover:border-yellow-400 pt-4 text-white"><span class="font-bold  text-lg">LINK TEXT</span> <br><span class=" text-[#828080]"> test text here</span></li>
         </ul>
     </header>
-    
+    <!-- section3 -->
+     <main class="   w-[90%] ml-[5%] mt-8">
+        <div class=" ">
+            <div class="absolute w-[90%] border-[20px]  border-white rounded-xl">
+
+
+
+                 <!-- Swiper -->
+          <div class="swiper mySwiper ">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide">
+                <img class=" w-full" src="ost magazine/1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img class="   w-full" src="ost magazine/2.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img  class="  w-full" src="ost magazine/3.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide"> <img  class="  w-full" src="ost magazine/4.jpg" alt=""> </div>
+              <div class="swiper-slide"> <img  class="  w-full" src="ost magazine/5.jpg" alt=""> </div>
+            
+            </div>
+                <div class="swiper-button-next "></div>
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-pagination "></div>
+                </div>               
+                                
+                        
+            </div>
+
+            <div class="absolute flex text-white mt-[25%] ml-10 gap-52  w-[80%] z-10">
+                <div class="border w-[80%] text-white pr-4 bg-black opacity-50">
+                    <h3>1.Dapiensociis temper donec</h3>
+                    <p>Pharetiumuna habitur et enim pellentesque phasellus aliquam nunc quis justo nam. <br>Lobortororci dapibulum ac intesquet t id sed intesque nec alique.</p>
+                </div>
+                <div class="border w-[20%]  bg-black opacity-70">
+                    <button class="text-yellow-400 relative top-5 ">continue Reading >></button>
+                </div>
+            </div>
+        </div>
+     </main>
+     
+
+
+
+
+
+
+
+
+
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
